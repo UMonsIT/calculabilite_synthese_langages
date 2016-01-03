@@ -37,9 +37,15 @@
 %\item \languageDef{}{}{}
 \item \languageDef{Path}{$<G,s,t>$}{$G$ est un graphe orienté possédant un chemin de $s$ à $t$}
 \item \languageDef{HamPath}{$<G,s,t>$}{$G$ est un graphe non-orienté t.q $G$ possède un chemin hamiltonien de $s$ à $t$}
-\item \languageDef{HamCycle}{$<G>$}{$G$ est un graphe non-orienté t.q $G$ possède un cycle hamiltonien}
-\item \languageDef{EulerCycle}{$<G>$}{$G$ est un graphe non orienté t.q $G$ possède un cycle Eulerien}
-\item \languageDef{Clique}{$<G,k>$}{$G$ est un graphe non-orienté possédant une clique de taille $k$}
+\item \languageDef{HamCycle}{$<G>$}{$G$ est un graphe non-orienté t.q $G$ 
+possède un cycle hamiltonien} (cycle passant par tous les sommets une et une 
+seule fois).
+\item \languageDef{EulerCycle}{$<G>$}{$G$ est un graphe non orienté t.q $G$ 
+possède un cycle Eulerien} (cycle passant par chaque arc du graphe une et une 
+seule fois).
+\item \languageDef{Clique}{$<G,k>$}{$G$ est un graphe non-orienté possédant 
+une clique de taille $k$} (une clique est un sous ensemble de sommets du 
+graphe tous 2 à 2 distincts reliés par une arrête).
 \item \languageDef{Sat}{$<\Phi>$}{$\Phi$ est une formule booléenne satisfiable}
 \item \languageDef{LP}{$<A,\overset{\rightarrow}{b}>$}{$A$ est une matrice $m \times n$ de réels t.q $\exists \overset{\rightarrow}{x}$ un vecteur de réels vérifiant $A\overset{\rightarrow}{x} \ge \overset{\rightarrow}{b}$}
 \item \languageDef{Composite}{$<n>$}{$n \in \mathbb{N} \backslash \{0,1\}$ et $n$ est composé}
@@ -48,9 +54,13 @@
 \item \languageDef{QBF}{$<\Phi>$}{$\Phi$ est une formule booléenne totalement quantifiée t.q $\Phi$ est vraie}
 \item \languageDef{3-Sat}{$<\Phi>$}{$\Phi$ est une formule booléenne sous forme 3CNF satisfiable}
 \item \languageDef{Sudoku}{$<G>$}{$G$ est une grille de taille $n^2 \times n^2$ partiellement complétée en respectant les règles du sudoku généralisé}
-\item \languageDef{Vertex-Cover}{$<G,k>$}{$G$ est un graphe non-orienté possédant une couverture de taille $k$}
+\item \languageDef{Vertex-Cover}{$<G,k>$}{$G$ est un graphe non-orienté possédant une couverture de taille $k$} (une couverture est un sous ensemble
+de sommets du graphe $G$ tel que pour toute arrête $(u,v)$ de $G$, soit $u\in C$
+soit $v \in C$).
 \item \languageDef{TSP}{$<G,k>$}{$G$ est un graphe non-orienté, comple, pondéré et qui possède un cycle hamiltonien de poids $\le k$}
-\item \languageDef{Ind}{$<G,k>$}{$G$ est un graphe non-orienté possédant un ensemble indépendant de taille $k$}
+\item \languageDef{Ind}{$<G,k>$}{$G$ est un graphe non-orienté possédant un ensemble indépendant de taille $k$} (un ensemble indépendant $I$ est un sous
+ensemble de sommets tel que toute paire de sommets de $I$ est non reliée par
+une arrête).
 \item \languageDef{IP}{$<A,\overset{\rightarrow}{b}>$}{$A$ est une matrice $m \times n$ d'entiers t.q $\exists \overset{\rightarrow}{x}$ un vecteur d'entiers vérifiant $A\overset{\rightarrow}{x} \ge \overset{\rightarrow}{b}$}
 
 \end{itemize}
